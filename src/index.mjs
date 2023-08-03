@@ -11,3 +11,11 @@ const ensureRequire = ()=> (!internalRequire) && (internalRequire = mod.createRe
  * A JSON object
  * @typedef { object } JSON
  */
+import { isBrowser, isJsDom } from 'browser-or-node';
+export { isBrowser, isJsDom };
+export const isClient = isBrowser || isJsDom;
+export const Element = (isClient)?window.Element:function(){};
+export const HTMLElement = (isClient)?window.HTMLElement:function(){};
+export const document = (isClient)?window.document:{};
+export const window = (isClient)?window:{};
+export const customElements = (isClient)?window.customElements:{define:()=>{}};

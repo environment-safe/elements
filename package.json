@@ -3,6 +3,21 @@
     "version": "0.0.1",
     "main": "dist/index.cjs",
     "module": "src/index.mjs",
+    "commonjs": "dist/index.cjs",
+    "exports": {
+        ".": {
+            "import": "./src/index.mjs",
+            "require": "./dist/index.cjs"
+        },
+        "./chai.js": {
+            "import": "./src/index.mjs",
+            "require": "./dist/index.cjs"
+        },
+        "./index.js": {
+            "import": "./src/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
     "homepage": "https://github.com/environment-safe/elements",
     "description": "A uniform target for Node.js and Browser Elements",
     "keywords": [

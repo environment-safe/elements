@@ -1,9 +1,19 @@
-elements
+@environment-safe/elements
 ============================
-null
+Because compatibility isn't useful if you still can't load the file. This makes WebComponents loadable so they can be included (both with JsDOM and without being instantiated).
 
 Usage
 -----
+
+```javascript
+import { 
+    Element
+    HTMLElement,
+    customElements,
+    document,
+    window
+} from '@environment-safe/elements';
+```
 
 Testing
 -------
