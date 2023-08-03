@@ -1,19 +1,23 @@
 {
-    "name": "elements",
+    "name": "@environment-safe/elements",
     "version": "0.0.1",
     "main": "dist/index.cjs",
     "module": "src/index.mjs",
-    "homepage": "null",
-    "description": "null",
-    "keywords": [],
-    "author": "null <null>()",
+    "homepage": "https://github.com/environment-safe/elements",
+    "description": "A uniform target for Node.js and Browser Elements",
+    "keywords": [
+        "Element",
+        "HTMLElement",
+        "WebComponent"
+    ],
+    "author": "Abbey Hawk Sparrow <@khrome> (http://patternweaver.com)",
     "contributors": [],
     "repository": {
         "type": "git",
-        "url": "null"
+        "url": "git@github.com:environment-safe/elements.git"
     },
     "bugs": {
-        "url": "null"
+        "url": "https://github.com/environment-safe/elements/issues"
     },
     "moka": {
         "firefox": {
