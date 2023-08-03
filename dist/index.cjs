@@ -17,7 +17,7 @@ Object.defineProperty(exports, "isJsDom", {
     return _browserOrNode.isJsDom;
   }
 });
-exports.window = void 0;
+exports.variables = void 0;
 var _browserOrNode = require("browser-or-node");
 /*
 import { isBrowser, isJsDom } from 'browser-or-node';
@@ -41,8 +41,8 @@ const HTMLElement = isClient ? window.HTMLElement : function () {};
 exports.HTMLElement = HTMLElement;
 const document = isClient ? window.document : {};
 exports.document = document;
-const window = isClient ? window : {};
-exports.window = window;
+const variables = isClient ? window : {};
+exports.variables = variables;
 const customElements = isClient ? window.customElements : {
   define: () => {}
 };
