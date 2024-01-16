@@ -19,3 +19,4 @@ export const HTMLElement = (isClient)?window.HTMLElement:function(){};
 export const document = (isClient)?window.document:{};
 export const variables = (isClient)?window:{};
 export const customElements = (isClient)?window.customElements:{define:()=>{}};
+export const requestAnimationFrame = (isClient)?window.requestAnimationFrame:()=>{};

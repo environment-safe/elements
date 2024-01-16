@@ -17,7 +17,7 @@ Object.defineProperty(exports, "isJsDom", {
     return _browserOrNode.isJsDom;
   }
 });
-exports.variables = void 0;
+exports.variables = exports.requestAnimationFrame = void 0;
 var _browserOrNode = require("browser-or-node");
 /*
 import { isBrowser, isJsDom } from 'browser-or-node';
@@ -47,3 +47,5 @@ const customElements = isClient ? window.customElements : {
   define: () => {}
 };
 exports.customElements = customElements;
+const requestAnimationFrame = isClient ? window.requestAnimationFrame : () => {};
+exports.requestAnimationFrame = requestAnimationFrame;
